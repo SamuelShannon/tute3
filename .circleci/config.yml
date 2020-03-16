@@ -16,7 +16,7 @@ jobs:
 
   pack:
     docker:
-     - image: circleci/node:lts
+      - image: circleci/node:lts
     steps:
       - checkout
       - run:
@@ -24,9 +24,9 @@ jobs:
           command: |
             yarn --frozen-lockfile
       - run:
-         name: compiles
-         command: |
-            yarn build
+          name: compiles
+            command: |
+              yarn build
 
 workflows:
   build-and-package:
