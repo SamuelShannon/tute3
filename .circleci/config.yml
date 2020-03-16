@@ -22,7 +22,7 @@ jobs:
       - run:
           name: Install dependendcies
           command: |
-          yarn --frozen-lockfile
+            yarn --frozen-lockfile
       - run:
          name: compiles
          command: |
